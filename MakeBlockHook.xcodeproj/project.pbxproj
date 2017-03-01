@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA3057081E6663BD0095A82B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3057071E6663BD0095A82B /* Foundation.framework */; };
+		AA3057121E6663BD0095A82B /* MakeBlockHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA3057111E6663BD0095A82B /* MakeBlockHook.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA3057041E6663BD0095A82B /* MakeBlockHook.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MakeBlockHook.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3057071E6663BD0095A82B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA30570C1E6663BD0095A82B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		AA30570D1E6663BD0095A82B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		AA30570F1E6663BD0095A82B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		AA3057101E6663BD0095A82B /* MakeBlockHook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeBlockHook-Prefix.pch"; sourceTree = "<group>"; };
+		AA3057111E6663BD0095A82B /* MakeBlockHook.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MakeBlockHook.mm; sourceTree = "<group>"; };
+		AA3057161E6663BD0095A82B /* MakeBlockHook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MakeBlockHook.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MakeBlockHook.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3057001E6663BD0095A82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3057081E6663BD0095A82B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3056FA1E6663BD0095A82B = {
+			isa = PBXGroup;
+			children = (
+				AA3057091E6663BD0095A82B /* MakeBlockHook */,
+				AA3057061E6663BD0095A82B /* Frameworks */,
+				AA3057051E6663BD0095A82B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3057051E6663BD0095A82B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057041E6663BD0095A82B /* MakeBlockHook.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3057061E6663BD0095A82B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057071E6663BD0095A82B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3057091E6663BD0095A82B /* MakeBlockHook */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057111E6663BD0095A82B /* MakeBlockHook.mm */,
+				AA30570A1E6663BD0095A82B /* Package */,
+				AA30570E1E6663BD0095A82B /* Supporting Files */,
+			);
+			path = MakeBlockHook;
+			sourceTree = "<group>";
+		};
+		AA30570A1E6663BD0095A82B /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				AA30570B1E6663BD0095A82B /* DEBIAN */,
+				AA3057131E6663BD0095A82B /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		AA30570B1E6663BD0095A82B /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				AA30570C1E6663BD0095A82B /* control.txt */,
+				AA30570D1E6663BD0095A82B /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		AA30570E1E6663BD0095A82B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA30570F1E6663BD0095A82B /* PackageVersion.plist */,
+				AA3057101E6663BD0095A82B /* MakeBlockHook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA3057131E6663BD0095A82B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057141E6663BD0095A82B /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		AA3057141E6663BD0095A82B /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057151E6663BD0095A82B /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		AA3057151E6663BD0095A82B /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				AA3057161E6663BD0095A82B /* MakeBlockHook.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA3057011E6663BD0095A82B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA3057031E6663BD0095A82B /* MakeBlockHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3057191E6663BD0095A82B /* Build configuration list for PBXNativeTarget "MakeBlockHook" */;
+			buildPhases = (
+				AA3056FF1E6663BD0095A82B /* Sources */,
+				AA3057001E6663BD0095A82B /* Frameworks */,
+				AA3057011E6663BD0095A82B /* Headers */,
+				AA3057021E6663BD0095A82B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeBlockHook;
+			productName = MakeBlockHook;
+			productReference = AA3057041E6663BD0095A82B /* MakeBlockHook.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3056FB1E6663BD0095A82B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					AA3057031E6663BD0095A82B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AA3056FE1E6663BD0095A82B /* Build configuration list for PBXProject "MakeBlockHook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA3056FA1E6663BD0095A82B;
+			productRefGroup = AA3057051E6663BD0095A82B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3057031E6663BD0095A82B /* MakeBlockHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA3057021E6663BD0095A82B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3056FF1E6663BD0095A82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3057121E6663BD0095A82B /* MakeBlockHook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA3057171E6663BD0095A82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		AA3057181E6663BD0095A82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		AA30571A1E6663BD0095A82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakeBlockHook/MakeBlockHook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		AA30571B1E6663BD0095A82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakeBlockHook/MakeBlockHook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3056FE1E6663BD0095A82B /* Build configuration list for PBXProject "MakeBlockHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3057171E6663BD0095A82B /* Debug */,
+				AA3057181E6663BD0095A82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3057191E6663BD0095A82B /* Build configuration list for PBXNativeTarget "MakeBlockHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA30571A1E6663BD0095A82B /* Debug */,
+				AA30571B1E6663BD0095A82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA3056FB1E6663BD0095A82B /* Project object */;
+}
